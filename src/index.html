@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalesVision</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="forecast.html">Forecast</a></li>
+                <li><a href="#">Data</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>SalesVision</h1>
+            <p>Accurately predict future sales with our advanced forecasting tool</p>
+            <button onclick="navigateTo('forecast')">Get Started</button>
+        </section>
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>
+                    <i class="fas fa-chart-line"></i>
+                    <p>Advanced algorithms for accurate forecasting</p>
+                </li>
+                <li>
+                    <i class="fas fa-table"></i>
+                    <p>Easy data import and management</p>
+                </li>
+                <li>
+                    <i class="fas fa-visual-chart"></i>
+                    <p>Interactive visualizations for insights</p>
+                </li>
+            </ul>
+        </section>
+        <section class="call-to-action">
+            <h2>Ready to get started?</h2>
+            <button onclick="navigateTo('signup')">Sign up for free</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SalesVision</p>
+    </footer>
+    <script>
+        function navigateTo(page) {
+            switch(page) {
+                case 'forecast':
+                    window.location.href = 'forecast.html';
+                    break;
+                case 'signup':
+                    window.location.href = 'signup.html';
+                    break;
+                default:
+                    alert('Page not found');
+            }
+        }
+    </script>
+</body>
+</html>
