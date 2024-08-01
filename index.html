@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SalesVision</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -42,7 +42,7 @@
         </section>
         <section class="call-to-action">
             <h2>Ready to get started?</h2>
-            <button onclick="navigateTo('signup')">Sign up for free</button>
+            <button onclick="navigateTo('forecast')">Get started with forecasting</button>
         </section>
     </main>
     <footer>
@@ -50,16 +50,7 @@
     </footer>
     <script>
         function navigateTo(page) {
-            switch(page) {
-                case 'forecast':
-                    window.location.href = 'forecast.html';
-                    break;
-                case 'signup':
-                    window.location.href = 'signup.html';
-                    break;
-                default:
-                    alert('Page not found');
-            }
+            window.location.href = page + '.html';
         }
     </script>
 </body>

@@ -1,3 +1,19 @@
 data/raw/*
 __pycache__/
 *.pyc
+# Virtual Environment
+venv/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Python Bytecode
+*.pyc
+__pycache__/
+
+# Trained Models
+trained_model.pkl
+
+# Training Data
+scripts/train.csv
+

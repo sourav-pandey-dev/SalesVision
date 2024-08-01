@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales Forecasting</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -20,85 +20,20 @@
     </header>
     <main>
         <h1>Sales Forecast</h1>
-        <table id="sales-data">
-            <thead>
-                <tr>
-                    <th>Units Sold</th>
-                    <th>Jan-16</th>
-                    <th>Feb-16</th>
-                    <th>Mar-16</th>
-                    <th>Apr-16</th>
-                    <th>May-16</th>
-                    <th>Jun-16</th>
-                    <th>Jul-16</th>
-                    <th>Aug-16</th>
-                    <th>Sep-16</th>
-                    <th>Oct-16</th>
-                    <th>Nov-16</th>
-                    <th>Dec-16</th>
-                    <th>Total Units Sold</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Product/Service A</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td class="result">00</td>
-                </tr>
-                <tr>
-                    <td>Product/Service B</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td class="result">00</td>
-                </tr>
-                <tr>
-                    <td>Product/Service C</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td contenteditable="true">00</td>
-                    <td class="result">00</td>
-                </tr>
-            </tbody>
-        </table>
-        <button id="generate-graphs">Generate Graphs</button>
         <div>
-            <canvas id="unitsSoldChart"></canvas>
-            <canvas id="totalUnitsSoldChart"></canvas>
+            <label for="category-select">Select Category:</label>
+            <select id="category-select">
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+        <button id="generate-graphs">Generate Forecast</button>
+        <div>
+            <canvas id="forecastChart"></canvas>
         </div>
     </main>
     <footer>
-        <p>&copy; 2023 SalesVision</p>
+        <p>&copy; 2024 SalesVision</p>
     </footer>
-    <script src="js/forcast_script.js"></script>
+    <script src="forecast_script.js"></script>
 </body>
 </html>
